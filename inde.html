@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGCD</title>
+</head>
+<body>
+    <script>
+        let a,b,reste,dividente,diviseur;
+        a=parseInt(prompt("Entrer la valeur de a"));
+        b=parseInt(prompt("Entrer la valeur de b"));
+        dividente=a;
+        diviseur=b;
+        while(reste!=0){
+            reste=dividente%diviseur;
+            dividente=diviseur;
+            diviseur=reste;
+        }
+        alert("le pgcd de a et b est "+ dividente );
+    </script>
+</body>
+</html>
